@@ -34,7 +34,7 @@ A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations a
 1. Clone the repository:
    ```bash
    git clone https://github.com/jbuck95/cs2man
-   cd cs2-config-manager
+   cd cs2man
    ```
 2. Install Rust:
    ```bash
