@@ -48,7 +48,7 @@ A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations a
    yay -S mingw-w64-gcc
    ```
 
-## Usage
+## Build
 1. Build and run for Linux:
    ```bash
    cargo run --release
