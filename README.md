@@ -8,8 +8,15 @@ A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations a
 ## Features
 - Copy CS2 configs between Steam accounts with backup support.
 - Import, edit, and save crosshair profiles using CS2 share codes.
-- Preview crosshairs in the UI, closely matching in-game appearance.
-- Supports Linux and Windows (via cross-compilation).
+- Linux/Windows 
+
+## Usage
+
+1. Download Release or manually install
+2. Keep CS closed while changing config
+3. keep the crosshair_profiles.json in the same folder as your binary.
+
+## manual Installation
 
 ## Requirements
 - Rust (`rustup` recommended)
@@ -23,10 +30,10 @@ A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations a
   serde_json = "1.0"
   ```
 
-## Installation
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cs2-config-manager.git
+   git clone https://github.com/jbuck95/cs2man
    cd cs2-config-manager
    ```
 2. Install Rust:
@@ -50,15 +57,14 @@ A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations a
    ```bash
    cargo build --release --target x86_64-pc-windows-gnu
    ```
-   Output: `target/x86_64-pc-windows-gnu/release/cs2_config_app.exe`
+   Output: `target/x86_64-pc-windows-gnu/release/cs2man.exe`
 3. Features:
    - Select source/target Steam accounts to copy configs.
    - Import crosshair codes (e.g., `CSGO-H3Wb2-YV2FB-VPipW-dx2td-hej5P`).
-   - Edit and preview crosshairs, then apply to `config.cfg`.
+   - Edit and preview (rendering super buggy) crosshairs, then apply to `config.cfg` or simply copy code.
 
 ## Notes
 - Ensure Steam is installed (Linux: `~/.steam/steam` or `~/.local/share/Steam`; Windows: `C:\Program Files (x86)\Steam`).
-- Windows builds may require `libGLESv2.dll` and `libEGL.dll` for `eframe`.
 - Close CS2 before applying configs.
 
 ## License
