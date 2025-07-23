@@ -2,6 +2,9 @@
 
 A lightweight Rust application to manage Counter-Strike 2 (CS2) configurations and crosshair profiles across Steam accounts.
 
+![cs2man](https://github.com/jbuck95/cs2man/blob/main/image.jpg?raw=true)
+
+
 ## Features
 - Copy CS2 configs between Steam accounts with backup support.
 - Import, edit, and save crosshair profiles using CS2 share codes.
